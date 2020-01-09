@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    切换语言
+    <language-switcher></language-switcher>
+    <router-view></router-view>
   </div>
 </template>
+
+<script>
+import LanguageSwitcher from './views/LanguageSwitcher'
+
+export default {
+  components: {
+    LanguageSwitcher
+  }
+}
+</script>
 
 <style>
 #app {
